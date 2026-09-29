@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Links</title>
+
   <style>
     body {
       margin: 0;
@@ -14,6 +15,7 @@
       color: #fff;
       font-family: Arial, sans-serif;
     }
+
     .card {
       width: min(92%, 560px);
       padding: 32px 24px;
@@ -22,7 +24,8 @@
       background: #222;
       border-radius: 16px;
     }
-    a {
+
+    a.button {
       display: inline-block;
       margin-top: 20px;
       padding: 14px 22px;
@@ -32,16 +35,45 @@
       text-decoration: none;
       font-weight: 700;
     }
-    a:hover { opacity: .9; }
+
+    .banner {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
   </style>
 </head>
+
 <body>
+
   <main class="card">
+
     <h1>My Links</h1>
+
     <p>Useful link:</p>
-    <a href="https://mdir.cc/" target="_blank" rel="noopener noreferrer">
+
+    <a class="button"
+       href="https://mdir.cc/"
+       target="_blank"
+       rel="noopener noreferrer">
       Visit MDIR
     </a>
+
+    <!-- ضع هنا Banner غير متعلق بخدمات جنسية -->
+
+    <div class="banner">
+      <a href="https://example.com"
+         target="_blank"
+         rel="noopener noreferrer">
+        <img
+          src="https://via.placeholder.com/180x150"
+          width="180"
+          height="150"
+          alt="Featured link">
+      </a>
+    </div>
+
   </main>
+
 </body>
 </html>
